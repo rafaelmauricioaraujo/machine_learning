@@ -23,8 +23,10 @@ classifier2 = MLPClassifier()
 #árvores de decisao
 classifier3 = GradientBoostingClassifier()
 
-#SVM
-classifier4 = SVC()
+#SVM: máquina de vetores de suporte
+classifier4 = SVC(C=1.0, kernel='poly', degree=3, gamma='auto_deprecated')
 
 #utilizando os dados do 'data.csv' para um exemplo de regressão logística
 classifier1.fit(X, y)
+
+#utilizando os dados do 'data.csv' para um exemplo de máquina de vetores de suporte
