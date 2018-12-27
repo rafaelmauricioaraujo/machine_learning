@@ -5,6 +5,8 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.svm import SVC
 
+from sklearn.model_selection import train_test_split
+
 data = pd.read_csv('data.csv')
 print(data.head())
 
@@ -29,4 +31,6 @@ classifier4 = SVC(C=1.0, kernel='poly', degree=3, gamma='auto_deprecated')
 #utilizando os dados do 'data.csv' para um exemplo de regressão logística
 classifier1.fit(X, y)
 
-#utilizando os dados do 'data.csv' para um exemplo de máquina de vetores de suporte
+#testes com sklearn
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25)
