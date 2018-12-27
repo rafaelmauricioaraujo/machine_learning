@@ -1,2 +1,5 @@
+import pandas as pd
 
-print('Olá mundo')
+data = pd.read_csv('data.csv')
+
+print(data.head())
