@@ -56,4 +56,16 @@ print(M)
 V = np.append(M, [[14], [17], [20]], axis=1)
 print(V)
 
-p
+print('Usando a função insert')
+vetor = np.array([1, 2, 3, 4, 5, 6])
+print(vetor)
+vetor = np.insert(vetor, 2, [3, 4])
+print(vetor)
+
+print('Agora em uma matriz')
+outra_matriz = np.array([[1, 2], [5, 6]])
+print(outra_matriz)
+outra_matriz = np.insert(outra_matriz, 1, [3, 4], axis=0)
+print(outra_matriz)
+outra_matriz = np.insert(outra_matriz, 2, [3, 5, 7], axis=1)
+print(outra_matriz)
