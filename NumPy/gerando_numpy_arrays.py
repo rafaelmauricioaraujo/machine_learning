@@ -33,8 +33,13 @@ matriz_diagonal = np.diag([2, 4, 8, 10])
 print(matriz_diagonal)
 
 print('Criando arrays com a build-in arange')
-print('usando apenas um parametro')
+print('usando apenas um parametro: stop')
 
 primeiro = np.arange(10)
 print(primeiro)
 print(primeiro.dtype)
+
+print('usando doisparametros: start, stop')
+segundo = np.arange(5, 11)
+print(segundo)
+
