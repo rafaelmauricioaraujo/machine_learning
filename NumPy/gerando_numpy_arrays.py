@@ -31,3 +31,10 @@ print(matriz_identidade)
 print('Criando uma matriz diagonal através da build-in np.diag')
 matriz_diagonal = np.diag([2, 4, 8, 10])
 print(matriz_diagonal)
+
+print('Criando arrays com a build-in arange')
+print('usando apenas um parametro')
+
+primeiro = np.arange(10)
+print(primeiro)
+print(primeiro.dtype)
