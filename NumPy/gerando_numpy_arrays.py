@@ -18,3 +18,8 @@ print('Criando um array de uns com np.ones')
 ones_array = np.ones((3, 4))
 print(ones_array)
 print(ones_array.dtype)
+
+print('Criando um array de constantes através da build-in np.full')
+fives_array = np.full((3, 4), 5)
+print(fives_array)
+print(fives_array.dtype)
