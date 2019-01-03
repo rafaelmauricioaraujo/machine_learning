@@ -72,6 +72,10 @@ mostra(T)
 U = np.diag(X, k=-1)
 mostra(U)
 
+# função unique
 
+P = np.array([[1, 3], [3, 2], [3, 4]])
+mostra(P)
 
+mostra(np.unique(P))
 
