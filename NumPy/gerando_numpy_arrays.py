@@ -23,3 +23,11 @@ print('Criando um array de constantes através da build-in np.full')
 fives_array = np.full((3, 4), 5)
 print(fives_array)
 print(fives_array.dtype)
+
+print('Criando uma matriz indentidade através da build-in np.eyes')
+matriz_identidade = np.eye(5)
+print(matriz_identidade)
+
+print('Criando uma matriz diagonal através da build-in np.diag')
+matriz_diagonal = np.diag([2, 4, 8, 10])
+print(matriz_diagonal)
