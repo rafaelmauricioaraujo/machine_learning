@@ -75,7 +75,7 @@ print('POW(x,2) =', np.power(x, 2)) # Elevamos todos os elementos para a potênc
 
 # funções estatísticas
 # Vamos criar uma ndarray de formato 2 x 2
-X = np.array([[1,2], [3,4]])
+X = np.array([[1, 2], [3, 4]])
 
 # Vamos exibir o x
 print()
@@ -109,7 +109,7 @@ print('Maximum value of all elements in the rows of X:', X.min(axis=1))
 # adicionando apenas um número a todos os elementos
 
 # Vamos criar uma ndarray de formato 2 x 2
-X = np.array([[1,2], [3,4]])
+X = np.array([[1, 2], [3, 4]])
 
 # Vamos exibir o x
 print()
@@ -127,13 +127,13 @@ print('X / 3 = \n', X / 3)
 # broadcasting
 
 # Criamos uma ndarray de ordem 1
-x = np.array([1,2,3])
+x = np.array([1, 2, 3])
 
 # Criamos uma ndarray 3x3
-Y = np.array([[1,2,3],[4,5,6],[7,8,9]])
+Y = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
 # Criamos uma ndarray 3x1
-Z = np.array([1,2,3]).reshape(3,1)
+Z = np.array([1, 2, 3]).reshape(3, 1)
 
 # Vamos exibir o x
 print()
@@ -152,8 +152,4 @@ print()
 
 print('x + Y = \n', x + Y)
 print()
-print('Z + Y = \n',Z + Y)
-
-
-
-
+print('Z + Y = \n', Z + Y)
