@@ -25,3 +25,7 @@ print(array_2d)
 # usando o comando shape para ver as dimensões do array
 print(array_2d.shape)
 
+# size retorna o tamanho do array
+tamanho_array_2d = array_2d.shape
+print('O tamanho do array é: {}'.format(tamanho_array_2d))
+print('o tipo do da variável é: {}'.format(type(tamanho_array_2d)))
