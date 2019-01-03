@@ -74,6 +74,3 @@ array_carregado = np.load('array_teste.npy')
 
 print('array_carregado = ', array_carregado)
 
-
-
-
