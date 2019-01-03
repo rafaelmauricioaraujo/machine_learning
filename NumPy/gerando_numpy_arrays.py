@@ -8,3 +8,5 @@ print('criando um array de zeros com função build-in numpy')
 zero_array = np.zeros((3, 4))
 print(zero_array)
 
+
+
