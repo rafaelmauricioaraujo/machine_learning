@@ -56,6 +56,22 @@ ZZ[2, 2] = 256
 mostra(ZZ)
 mostra(X)
 
+# voltando o valor inicial em X
+X[2, 4] = 15
+mostra(X)
+
+#outras funções
+# diagonal
+
+F = np.diag(X)
+mostra(F)
+
+T = np.diag(X, k=1)
+mostra(T)
+
+U = np.diag(X, k=-1)
+mostra(U)
+
 
 
 
