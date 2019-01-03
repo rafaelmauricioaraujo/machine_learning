@@ -1,7 +1,8 @@
 # Numpy é abreviação de numerical python. É uma biblioteca desenvolvida para otimizar calculos cientificos
 # e é grandemente mais veloz do que lista do python, por exemplo, por vários motivos. Foi construída em linguagem C,
 # uma linguagem de baixo nível. Os algoritmos do NumPy utilizam arrays multidimensionais otimizados para cálculos
-# estatísticos, matemáticos e de álgebra linear.
+# matemáticos. Ao utilizar estruturas de dados de vetores e matrizes para armazenar as variáveis, ele pode fazer
+# uso de álgebra e estatística para fazer cálculos mais velozes.
 
 import time
 import numpy as np
