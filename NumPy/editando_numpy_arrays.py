@@ -69,3 +69,32 @@ outra_matriz = np.insert(outra_matriz, 1, [3, 4], axis=0)
 print(outra_matriz)
 outra_matriz = np.insert(outra_matriz, 2, [3, 5, 7], axis=1)
 print(outra_matriz)
+
+print('Utilizando a função vstack para empilhar arrays')
+# Criamos uma ndarray de ordem 1
+x = np.array([1, 2])
+
+# Criamos uma ndarray de ordem 2
+Y = np.array([[3, 4], [5, 6]])
+
+# Vamos exibir o x
+print()
+print('x = ', x)
+
+# Vamos exibir o Y
+print()
+print('Y = \n', Y)
+
+# Empilhamos x sobre Y
+z = np.vstack((x, Y))
+
+# Empilhamos x à direita de Y. Precisamos remodelar x para poder empilhá-lo à direita de Y.
+w = np.hstack((Y, x.reshape(2, 1)))
+
+# Vamos exibir o v
+print()
+print('z = \n', z)
+
+# Vamos exibir o w
+print()
+print('w = \n', w)
