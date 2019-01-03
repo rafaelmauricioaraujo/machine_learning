@@ -64,4 +64,13 @@ print('array espeficicando o tipo')
 array_float = np.array([1.0, 2.2, 3.8], dtype=int)
 print(array_float)
 
+print('Salvando e abrindo arrays:')
+
+outro_array = np.array([2, 4, 6, 8, 10])
+np.save('array_teste', outro_array)
+
+
+
+
+
 
