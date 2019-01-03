@@ -14,3 +14,20 @@ print('Também é possível espeficifar índices negativos para acessar a partir
 print('array[-5]: ', array[-5])
 print('array[-4]: ', array[-4])
 print('array[-1]: ', array[-1])
+
+print('Alterando valor de um elemento')
+print('array[3] = 20')
+array[3] = 20
+print(array)
+
+print('Também é possível acessar e alterar valores de um array bidimensional')
+
+matriz = np.arange(1, 10).reshape((3, 3))
+print(matriz)
+print('elemento na posicao (0, 0)', matriz[0, 0])
+print('elemento na posicao (1, 2)', matriz[1, 2])
+print('elemento na posicao (2, 2)', matriz[2, 2])
+
+print('Alterando valores na matriz')
+matriz[0, 0] = 20
+print(matriz)
