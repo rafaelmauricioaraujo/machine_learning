@@ -39,6 +39,23 @@ mostra(R)
 H = X[:, 2:3]
 mostra(H)
 
+# IMPORTANTE: o fatiamento apenas cria uma view do array e não outra variável com o array fatiado
+# para isso, deve-se usar a função copy()
+
+# exemplo
+mostra(X)
+Z = X[:3, 2:]
+mostra(Z)
+Z[2, 2] = 155
+mostra(Z)
+mostra(X)
+
+ZZ = np.copy(X[:3, 2:])
+mostra(ZZ)
+ZZ[2, 2] = 256
+mostra(ZZ)
+mostra(X)
+
 
 
 
