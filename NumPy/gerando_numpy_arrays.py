@@ -39,7 +39,11 @@ primeiro = np.arange(10)
 print(primeiro)
 print(primeiro.dtype)
 
-print('usando doisparametros: start, stop')
+print('usando dois parametros: start, stop')
 segundo = np.arange(5, 11)
 print(segundo)
+
+print('Usando três parametros: start, stop, step')
+terceiro = np.arange(1, 20, 3)
+print(terceiro)
 
