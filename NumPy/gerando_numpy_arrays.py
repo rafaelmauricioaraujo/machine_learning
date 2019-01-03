@@ -67,7 +67,7 @@ print('Utilizando o métodos encadeados do NumPy')
 Y = np.arange(20).reshape((10, 2))
 print(Y)
 print('Outro exemplo')
-Z = np.linspace(0, 50, 10, endpoint=False).reshape(5,2)
+Z = np.linspace(0, 50, 10, endpoint=False).reshape(5, 2)
 print(Z)
 
 print('Criando arrays de números aleatórios')
@@ -76,3 +76,19 @@ print('usando a .random para criar floats aleatorios entre 0(inclusivo) e 1(excl
 floats_aleatorios = np.random.random((3, 3))
 print(floats_aleatorios)
 
+print('Criando inteiros aleatórios dentro de um intervalo')
+ints_aleatorios = np.random.randint(4, 15, (3, 2))
+print(ints_aleatorios)
+
+print('Criando a partir de distribuições estatísticas')
+dist_normal = np.random.normal(0, 0.1, size=(1000, 1000))
+print(dist_normal)
+print('array bidimensional de 1000 linhas por 1000 colunas com média=0 e dp=0.1')
+
+print('Caracteristicas: ')
+print('média: ', dist_normal.mean())
+print('desvio padrão: ', dist_normal.std())
+print('máximo: ', dist_normal.max())
+print('mínimo: ', dist_normal.min())
+print('nº de positivos: ', (dist_normal > 0).sum())
+print('nº de negativos: ', (dist_normal < 0).sum())
