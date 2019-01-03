@@ -69,7 +69,10 @@ print('Salvando e abrindo arrays:')
 outro_array = np.array([2, 4, 6, 8, 10])
 np.save('array_teste', outro_array)
 
+# abrindo o array salvo
+array_carregado = np.load('array_teste.npy')
 
+print('array_carregado = ', array_carregado)
 
 
 
