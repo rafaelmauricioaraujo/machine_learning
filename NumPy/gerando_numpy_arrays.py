@@ -47,3 +47,11 @@ print('Usando três parametros: start, stop, step')
 terceiro = np.arange(1, 20, 3)
 print(terceiro)
 
+print('Utilizando a buil-in linespace a qual exige pelo menos dois parametros')
+outro_array = np.linspace(0, 25, 10)
+print(outro_array)
+print('10 números de 0 a 25, igualmente espaçados')
+
+print("Exlcuindo o último número")
+mais_outro = np.linspace(0, 25, 10, endpoint=False)
+print(mais_outro)
