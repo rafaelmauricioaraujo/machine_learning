@@ -31,3 +31,11 @@ print('elemento na posicao (2, 2)', matriz[2, 2])
 print('Alterando valores na matriz')
 matriz[0, 0] = 20
 print(matriz)
+
+X = np.arange(1, 10).reshape(3, 3)
+print(X)
+# axis = 0: selecionar da linha enquanto axis = 1: selecionar da coluna
+Y = np.delete(X, 2, axis=1)
+print('\n', Y)
+Z = np.delete(Y, 0, axis=0)
+print('\n', Z)
