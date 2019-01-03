@@ -39,3 +39,21 @@ Y = np.delete(X, 2, axis=1)
 print('\n', Y)
 Z = np.delete(Y, 0, axis=0)
 print('\n', Z)
+
+print('Adicionando elementos com a função append')
+
+elementos = np.array([1, 2, 3])
+print(elementos)
+elementos = np.append(elementos, [4])
+print(elementos)
+elementos = np.append(elementos, [5, 6, 7])
+print(elementos)
+
+print('Adicionando em matrizes')
+
+M = np.arange(11, 20).reshape(3, 3)
+print(M)
+V = np.append(M, [[14], [17], [20]], axis=1)
+print(V)
+
+p
