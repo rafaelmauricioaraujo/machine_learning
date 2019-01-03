@@ -62,3 +62,17 @@ array_1d = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 1
 print(array_1d)
 array_2d = np.reshape(array_1d, (4, 5))
 print(array_2d)
+
+print('Utilizando o métodos encadeados do NumPy')
+Y = np.arange(20).reshape((10, 2))
+print(Y)
+print('Outro exemplo')
+Z = np.linspace(0, 50, 10, endpoint=False).reshape(5,2)
+print(Z)
+
+print('Criando arrays de números aleatórios')
+print('usando a .random para criar floats aleatorios entre 0(inclusivo) e 1(exclusivo')
+
+floats_aleatorios = np.random.random((3, 3))
+print(floats_aleatorios)
+
