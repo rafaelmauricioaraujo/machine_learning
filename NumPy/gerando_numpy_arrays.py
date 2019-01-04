@@ -92,3 +92,9 @@ print('máximo: ', dist_normal.max())
 print('mínimo: ', dist_normal.min())
 print('nº de positivos: ', (dist_normal > 0).sum())
 print('nº de negativos: ', (dist_normal < 0).sum())
+
+
+# testando
+print('testando')
+row_indices = np.array(np.random.permutation(dist_normal.shape))
+print(row_indices)

@@ -22,6 +22,7 @@ print(np.setdiff1d(x, y))
 print(np.union1d(x, y))
 
 # Vamos criar uma ndarray desordenada de ordem 1
+print('Vamos criar uma ndarray desordenada de ordem 1')
 x = np.random.randint(1, 11, size=(10,))
 
 # Vamos exibir o x
