@@ -41,8 +41,11 @@ primeiro = np.random.permutation(9).reshape(3, 3)
 print(primeiro)
 print(primeiro.dtype)
 print(primeiro.shape[0])
+print(type(primeiro.shape[0]))
 
 # Create a rank 1 ndarray that contains a random permutation of the row indices of `X_norm`
-row_indices = np.arange(np.random.permutation(primeiro.shape[0]))
+#tamanho = primeiro.shape[0]
+#print(np.random.permutation(primeiro.shape[0]))
+row_indices = np.random.permutation(primeiro.shape[0])
 print('row_indices: ')
 print(row_indices)
