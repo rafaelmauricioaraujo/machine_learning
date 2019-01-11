@@ -15,7 +15,3 @@ bmi_life_model.fit(bmi_life_data[['BMI']], bmi_life_data[['Life expectancy']])
 # fazendo previsões
 laos_life_exp = bmi_life_model.predict([21.07931])
 print(laos_life_exp)
-
-
-
-
