@@ -2,3 +2,6 @@
 # do termo econométrico painel de dados. O pandas incorpora duas estruturas de dados adicionais ao Python,
 # ou seja, Séries Pandas e DataFrame pandas.
 
+# importando pandas
+import pandas as pd
+
