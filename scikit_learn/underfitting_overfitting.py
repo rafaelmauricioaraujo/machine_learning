@@ -8,6 +8,9 @@ from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.svm import SVC
 
 from sklearn.model_selection import learning_curve
+from sklearn.metrics import accuracy_score
+
+
 
 # It is good to randomize the data before drawing Learning Curves
 
@@ -59,6 +62,8 @@ def draw_learning_curves(X, y, estimator, num_trainings):
 # Logistic Regression
 estimator = LogisticRegression()
 draw_learning_curves(X2, y2, estimator, 2)
+
+accuracy_score()
 
 # Decision Tree
 # estimator = GradientBoostingClassifier()
