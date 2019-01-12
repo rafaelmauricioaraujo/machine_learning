@@ -20,3 +20,11 @@ print('Lista de compras tem a o total de elementos: ', lista_compras.size)
 # Exibindo os rótulos e os dados
 print('Rótulos:', lista_compras.index)
 print('Dados: ', lista_compras.values)
+
+# Procurando um índice na lista
+x = 'banana' in lista_compras
+y = 'Pão' in lista_compras
+
+print('banana foi encontrado na lista: ', x)
+print('pão foi encontrado na lista', y)
+
