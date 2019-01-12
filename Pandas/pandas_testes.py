@@ -10,3 +10,9 @@ lista_compras = pd.Series(data=[30, 6, 'Yes', 'No'], index=['Ovos', 'Maças', 'L
 
 # Exibindo lista
 print(lista_compras)
+
+# Exibindo algumas informações sobre a lista
+print('Algumas informações: ')
+print('Lista de compras tem a forma: ', lista_compras.shape)
+print('Lista de compras tem a dimensão: ', lista_compras.ndim)
+print('Lista de compras tem a o total de elementos: ', lista_compras.size)
