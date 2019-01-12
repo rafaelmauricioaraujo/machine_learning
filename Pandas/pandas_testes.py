@@ -16,3 +16,7 @@ print('Algumas informações: ')
 print('Lista de compras tem a forma: ', lista_compras.shape)
 print('Lista de compras tem a dimensão: ', lista_compras.ndim)
 print('Lista de compras tem a o total de elementos: ', lista_compras.size)
+
+# Exibindo os rótulos e os dados
+print('Rótulos:', lista_compras.index)
+print('Dados: ', lista_compras.values)
