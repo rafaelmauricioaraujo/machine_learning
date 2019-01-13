@@ -31,3 +31,15 @@ print('Quantos ovos comprar: \n', lista_compras[0])
 
 # Utilizando o 'iloc' parar acessar vários índices
 print('é preciso comprar paes e leite: \n', lista_compras.iloc[[2, 3]])
+
+# Alterando valores das listas
+
+# imprimindo a lista original
+print('Lista de compras: \n', lista_compras)
+
+# alterando valores
+lista_compras['Ovos'] = 2
+
+# imprimindo nova lista
+print('Lista de compras: \n', lista_compras)
+
