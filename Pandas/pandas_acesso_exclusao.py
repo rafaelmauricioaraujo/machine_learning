@@ -43,3 +43,26 @@ lista_compras['Ovos'] = 2
 # imprimindo nova lista
 print('Lista de compras: \n', lista_compras)
 
+# Removendo valores com o Series.drop e o Series.drop, inplace=True
+# Exibindo a lista original
+print('Lista de compras: \n', lista_compras)
+
+# removendo um item utilizando o drop
+print()
+print('Lista de compras: \n', lista_compras.drop('Maças'))
+
+# Removendo apenas na apresentação e não na lista original, esta maneira é chamada de out-of-place
+# imprimindo a lista original
+print('Lista de compras: \n', lista_compras)
+
+# Para remover na original é preciso configurar o parâmetro inplace=True
+# imprimindo a lista original
+print()
+print('Lista de compras: \n', lista_compras)
+
+# Removendo na lista original
+print()
+print('lista de compras: \n', lista_compras.drop('Maças', inplace=True))
+
+# Imprimindo a lista original
+print('Lista de compras: \n', lista_compras)
