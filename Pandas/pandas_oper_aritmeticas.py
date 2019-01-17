@@ -50,6 +50,16 @@ print()
 print('Dividinso o número de laranjas: \n', fruits[['maças', 'laranjas']] / 2)
 print()
 
+# Também é possível aplicar operações sobre a série do Pandas com dados de tipos variados, desde
+# a operação seja definida para todos os tipos de dados, caso contrário lançará um erro
+
+# lista de compras
+lista_compras = pd.Series(data=[30, 6, 'Yes', 'No'], index=['Ovos', 'Maças', 'Leite', 'Pão'])
+
+# multiplicando a lista por 2
+print('Duplicando a lista de compras: \n', lista_compras * 2)
+
+
 
 
 
