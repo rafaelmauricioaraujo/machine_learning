@@ -29,6 +29,28 @@ print('SQTR(X) = \n', np.sqrt(fruits))
 print()
 print('POW(X) = \n', np.power(fruits, 2))
 
+# Também é possível aplicar operações matemáticas apenas a itens selecionados em uma lista
+
+# Exibindo a lista para referência
+print(fruits)
+
+# Adicionando 2 apenas a banana
+print('Qtde de bananas + 2', fruits['bananas'] + 2)
+print()
+
+# Subtraíndo 2 maças
+print('Qtde de maças - 2', fruits['maças'] - 2)
+print()
+
+# Multiplicando maças e laranjas por 2
+print('Dobrando a qtde de maças e laranjas: \n', fruits[['maças', 'laranjas']] * 2)
+print()
+
+# Dividindo maças e laranjas por 2
+print('Dividinso o número de laranjas: \n', fruits[['maças', 'laranjas']] / 2)
+print()
+
+
 
 
 
