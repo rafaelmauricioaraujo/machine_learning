@@ -2,7 +2,6 @@
 import pandas as pd
 
 # Create a dictionary
-
 items = {'Bob': pd.Series(data=[245, 25, 55], index=['bike', 'pants', 'watch']),
          'Alice': pd.Series(data=[40, 110, 500, 45], index=['book', 'glasses', 'bike', 'pants'])}
 
@@ -10,15 +9,12 @@ items = {'Bob': pd.Series(data=[245, 25, 55], index=['bike', 'pants', 'watch']),
 print(type(items))
 
 # Create a Pandas DataFrame, using as parameter the dictionary
-
 shopping_carts = pd.DataFrame(items)
 print(shopping_carts)
 
 # Create a Pandas Series Dictionary without index
-
 data = {'Bob': pd.Series([245, 25, 55]),
         'Alice': pd.Series([40, 110, 500, 45])}
-
 
 # Create a DataFrame
 df = pd.DataFrame(data)
