@@ -1,32 +1,35 @@
-# importando o pandas
+# importing pandas
 import pandas as pd
 
-# Criando o dicionário de séries
+# Create a dictionary
 
-itens = {'Bob': pd.Series(data=[245, 25, 55], index=['bike', 'roupas', 'relogio']),
+items = {'Bob': pd.Series(data=[245, 25, 55], index=['bike', 'roupas', 'relogio']),
          'Alice': pd.Series(data=[40, 110, 500, 45], index=['livro', 'oculos', 'bike', 'roupas'])}
 
-# Exibindo o tipo para confirmar que é um dicionário
-print(type(itens))
+# show the type to confirm that is a dictionary
+print(type(items))
 
-# Criando um DataFrame do Pandas, passando como parâmetro o dicionário de séries
-carrinho_de_compras = pd.DataFrame(itens)
-print(carrinho_de_compras)
+# Create a Pandas DataFrame, using as parameter the dictionary
 
-# Criando um dicionário de Séries do Pandas sem índices
+shopping_carts = pd.DataFrame(items)
+print(shopping_carts)
+
+# Create a Pandas Series Dictionary without index
+
 data = {'Bob': pd.Series([245, 25, 55]),
         'Alice': pd.Series([40, 110, 500, 45])}
 
-# Criando um DataFrame
+
+# Create a DataFrame
 df = pd.DataFrame(data)
 
-# Exibindo  o DataFrame
+# Showing the DataFrame
 print(df)
 
-# Também é possível obter algumas informações sobre o carrinho de compras
-print('carrinho de compras.shape: ', carrinho_de_compras.shape)
-print('carrinho de compras.ndim: ', carrinho_de_compras.ndim)
-print('carrinho de compras tem um total de: ', carrinho_de_compras.size, 'elementos')
+# Is also to get some information about shopping carts
+print('shopping_carts.shape: ', shopping_carts.shape)
+print('shopping_carts dimension: ', shopping_carts.ndim)
+print('shopping_carts have a amount of: ', shopping_carts.size, 'elements')
 print()
 print('os dados no carrinho de compras são: ', carrinho_de_compras.values)
 print()
