@@ -83,7 +83,7 @@ print(time_light)
 
 # Use Boolean indexing to select only those planets for which sunlight takes less
 # than 40 minutes to reach them.
-close_planets = dist_planets[time_light < 40]
+close_planets = time_light[time_light < 40]
 print(close_planets)
 
 
