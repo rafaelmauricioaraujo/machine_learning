@@ -32,3 +32,21 @@ print()
 print('shopping_carts index: ', shopping_carts.index)
 print()
 print('shopping_carts columns: ', shopping_carts.columns)
+
+# Create a DataFrame with only Bob's data
+bob_shopping_carts = pd.DataFrame(items, columns=['Bob'])
+
+# Show bob_shopping_carts
+print(bob_shopping_carts)
+
+# Create a DataFrame with only some items from Alice and Bob
+sel_shopping_carts = pd.DataFrame(items, index=['pants', 'book'])
+
+# Show sel_shopping_carts
+print(sel_shopping_carts)
+
+# Create a DataFrame with some items form Alice
+alice_sel_shopping_carts = pd.DataFrame(items, index=['glasses', 'bike'], columns=['Alice'])
+
+# Show alice sel shopping_carts
+print(alice_sel_shopping_carts)
