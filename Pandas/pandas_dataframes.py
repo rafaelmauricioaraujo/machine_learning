@@ -50,3 +50,22 @@ alice_sel_shopping_carts = pd.DataFrame(items, index=['glasses', 'bike'], column
 
 # Show alice sel shopping_carts
 print(alice_sel_shopping_carts)
+
+# Create a DataFrame from arrays dictionary
+# Important: all the list had to have the same size
+
+# Create a array dictionary
+data = {'Integer': [1, 2, 4],
+        'Floats': [4.5, 8.2, 9.6]}
+
+# Create a DataFrame
+df = pd.DataFrame(data)
+
+# Show the DataFrame
+print(df)
+
+# add a index for DataFrame df
+df = pd.DataFrame(data, index=['label 1', 'label 2', 'label 3'])
+
+# show again the data with labels
+print(df)
