@@ -69,3 +69,19 @@ df = pd.DataFrame(data, index=['label 1', 'label 2', 'label 3'])
 
 # show again the data with labels
 print(df)
+
+# Create a DataFrame from dictionaries
+items2 = [{'bikes': 20, 'pants': 30, 'watches': 35},
+        {'watches': 10, 'glasses': 50, 'bikes': 15, 'pants': 5}]
+
+# Create a DataFrame
+store_items = pd.DataFrame(items2)
+
+# Show the DataFrame
+print(store_items)
+
+# Add a index to DataFrame store_items
+store_items = pd.DataFrame(items2, index=['store 1', 'store 2'])
+
+# Show the new DataFrame
+print(store_items)
