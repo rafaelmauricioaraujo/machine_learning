@@ -64,7 +64,7 @@ print('The standard deviation of the stock price for each stock:\n', all_stocks.
 print('The correlation between stocks: \n', all_stocks.corr())
 
 # We compute the rolling mean using a 150-Day window for Google stock
-rollingMean = google_stock.rolling(150).mean()
+rollingMean = all_stocks['Google'].rolling(150).mean()
 print(rollingMean)
 
 # We plot the Google stock data
