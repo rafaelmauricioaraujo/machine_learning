@@ -24,7 +24,8 @@ google_stock = google_stock.rename(index=str, columns={'Adj Close': 'Google Adj 
 print(google_stock.head())
 
 # Change the Adj Close column label to Apple
-#apple_stock =
-
+apple_stock = apple_stock.rename(index=str, columns={'Adj Close': 'Apple Adj Close'})
+print(apple_stock.head())
 # Change the Adj Close column label to Amazon
-#amazon_stock =
+amazon_stock = amazon_stock.rename(index=str, columns={'Adj Close': 'Amazon Adj Close'})
+print(amazon_stock.head())
