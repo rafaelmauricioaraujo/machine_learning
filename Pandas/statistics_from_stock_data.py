@@ -26,6 +26,26 @@ print(google_stock.head())
 # Change the Adj Close column label to Apple
 apple_stock = apple_stock.rename(index=str, columns={'Adj Close': 'Apple Adj Close'})
 print(apple_stock.head())
+
 # Change the Adj Close column label to Amazon
 amazon_stock = amazon_stock.rename(index=str, columns={'Adj Close': 'Amazon Adj Close'})
 print(amazon_stock.head())
+
+# Join the Google stock to all_stocks
+all_stocks = all_stocks.join(google_stock)
+
+# Join the Apple stock to all_stocks
+all_stocks = all_stocks.join(apple_stock)
+
+# Join the Amazon stock to all_stocks
+all_stocks = all_stocks.join(amazon_stock)
+
+print(all_stocks.head())
+print(all_stocks.tail())
+
+# Check if there are any NaN values in the all_stocks DataFrame
+print(all_stocks.isnull().any())
+
+# Remove any rows that contain NaN values
+all_stocks.dropna(inplace=True)
+print(all_stocks.isnull().any())
