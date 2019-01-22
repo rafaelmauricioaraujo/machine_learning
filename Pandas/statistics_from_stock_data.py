@@ -49,3 +49,19 @@ print(all_stocks.isnull().any())
 # Remove any rows that contain NaN values
 all_stocks.dropna(inplace=True)
 print(all_stocks.isnull().any())
+
+# Print the average stock price for each stock
+print('The average stock prices for each stock:\n', all_stocks.mean())
+
+# Print the median stock price for each stock
+print('The median stock price for each stock:\n', all_stocks.median())
+
+# Print the standard deviation of the stock price for each stock
+print('The standard deviation of the stock price for each stock:\n', all_stocks.std())
+
+# Print the correlation between stocks
+print('The correlation between stocks: \n', all_stocks.corr())
+
+# We compute the rolling mean using a 150-Day window for Google stock
+rollingMean = google_stock.rolling(150).mean()
+print(rollingMean)
