@@ -1,5 +1,6 @@
 import pandas as pd
-import numpy as np
+import matplotlib.pyplot as plt
+
 
 # Load the Google stock data
 google_stock = pd.read_csv('GOOG.csv', index_col=['Date'], parse_dates=['Date'], usecols=['Date', 'Adj Close'])
@@ -20,15 +21,15 @@ dates = pd.date_range('2000-01-01', '2016-12-31')
 all_stocks = pd.DataFrame(index=dates)
 
 # Change the Adj Close column label to Google
-google_stock = google_stock.rename(index=str, columns={'Adj Close': 'Google Adj Close'})
+google_stock = google_stock.rename(index=str, columns={'Adj Close': 'Google'})
 print(google_stock.head())
 
 # Change the Adj Close column label to Apple
-apple_stock = apple_stock.rename(index=str, columns={'Adj Close': 'Apple Adj Close'})
+apple_stock = apple_stock.rename(index=str, columns={'Adj Close': 'Apple'})
 print(apple_stock.head())
 
 # Change the Adj Close column label to Amazon
-amazon_stock = amazon_stock.rename(index=str, columns={'Adj Close': 'Amazon Adj Close'})
+amazon_stock = amazon_stock.rename(index=str, columns={'Adj Close': 'Amazon'})
 print(amazon_stock.head())
 
 # Join the Google stock to all_stocks
@@ -65,3 +66,11 @@ print('The correlation between stocks: \n', all_stocks.corr())
 # We compute the rolling mean using a 150-Day window for Google stock
 rollingMean = google_stock.rolling(150).mean()
 print(rollingMean)
+
+# We plot the Google stock data
+plt.plot(all_stocks['Google'])
+
+# We plot the rolling mean ontop of our Google stock data
+plt.plot(rollingMean)
+plt.legend(['Google Stock Price', 'Rolling Mean'])
+plt.show()
