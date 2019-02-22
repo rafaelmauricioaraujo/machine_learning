@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 
 # Load the Google stock data
 google_stock = pd.read_csv('GOOG.csv', index_col=['Date'], parse_dates=['Date'], usecols=['Date', 'Adj Close'])
+print(google_stock.info())
 
 # Load the Apple stock data
 apple_stock = pd.read_csv('AAPL.csv', index_col=['Date'], parse_dates=['Date'], usecols=['Date', 'Adj Close'])
@@ -73,4 +74,4 @@ plt.plot(all_stocks['Google'])
 # We plot the rolling mean ontop of our Google stock data
 plt.plot(rollingMean)
 plt.legend(['Google Stock Price', 'Rolling Mean'])
-plt.show()
+# plt.show()
